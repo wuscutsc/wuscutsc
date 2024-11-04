@@ -1,0 +1,271 @@
+/* Universal base styles */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: black;
+    /* Black text for visibility against a light background */
+    background: linear-gradient(to top, #e0f2ff 0%, #ffffff 100%);
+    /* Sky blue to white gradient */
+}
+
+/* Header styles */
+.header {
+    background: linear-gradient(to top, #e0f2ff 0%, #ffffff 100%);
+    /* Continuous sky effect */
+    color: black;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background: rgba(255, 255, 255, 0.8);
+    /* Semi-transparent white navbar */
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.navbar-links {
+    display: flex;
+}
+
+.donate-button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+}
+
+/* Hero section styles */
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+    border: none;
+    margin-top: 20px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 10px;
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+/* Info-section styles */
+.info-section {
+    background-color: #f9f9f9;
+    /* Light grey background */
+    color: #333;
+    /* Dark grey text for better readability */
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.info-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    /* Center text alignment for the container, including the title */
+}
+
+.info-section h2 {
+    font-size: 2em;
+    color: #000;
+    /* Black for heading */
+    margin-bottom: 20px;
+}
+
+.info-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: left;
+    /* Keeping paragraph text left-aligned for readability */
+    max-width: 900px;
+    margin: auto;
+}
+
+/* About WUSC styles */
+.about-wusc {
+    background-color: #ffffff;
+    /* White background */
+    color: #333;
+    /* Dark grey text */
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.about-wusc .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    /* Center text alignment for the container */
+}
+
+.about-wusc h2 {
+    font-size: 2.5em;
+    color: #000;
+    /* Black for the title */
+    margin-bottom: 20px;
+    text-align: center;
+    /* Specifically centering the title */
+}
+
+.about-wusc p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: left;
+    /* Keeping the paragraph text left-aligned for readability */
+    max-width: 900px;
+    /* Optional: constraining paragraph width for better typography */
+    margin: auto;
+    /* Centering the paragraph within the container */
+}
+
+.about-wusc a {
+    color: #0056b3;
+    /* Blue color for the link */
+    text-decoration: none;
+}
+
+.about-wusc a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+    }
+
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+}
+
+/* Testimonials section styling */
+.testimonials {
+    background-color: #f0f0f0;
+    /* Light gray background for the section */
+    padding: 40px 20px;
+}
+
+.testimonials .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.testimonial {
+    background-color: #ffffff;
+    /* White background for each testimonial */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    /* Rounded corners for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    display: flex;
+    align-items: center;
+    /* Align items vertically */
+    gap: 20px;
+}
+
+.testimonial img {
+    width: 100px;
+    /* Fixed size for images */
+    height: 100px;
+    border-radius: 50%;
+    /* Circular image */
+    object-fit: cover;
+    /* Ensure the image covers the area */
+}
+
+.testimonial h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.testimonial .subtitle {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.testimonial p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #444;
+}
+
+@media (max-width: 768px) {
+    .testimonial {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .testimonial img {
+        margin: 0 auto;
+        /* Center image in mobile view */
+    }
+}
+
+
+footer {
+    background-color: #f2f2f2;
+    /* Light grey background for visibility */
+    color: #333;
+    /* Dark text color for contrast */
+    text-align: center;
+    /* Center the text within the footer */
+    padding: 20px 0;
+    /* Padding for top and bottom of the footer */
+    border-top: 1px solid #e1e1e1;
+    /* A subtle border top to separate from content */
+}
+
+footer p {
+    margin: 5px 0;
+    /* Small margin to separate multiple lines of text */
+    font-size: 0.9em;
+    /* Slightly smaller text for the footer */
+}
